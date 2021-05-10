@@ -1,6 +1,7 @@
-FROM ubuntu:20.04
+FROM alpine
 
-RUN apt-get update && apt-get install xe-guest-utilities
+RUN apk add xe-guest-utilities
+
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
