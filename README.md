@@ -6,7 +6,7 @@ RancherOS is a minimalist linux distribution, designed to run docker. More info 
 
 This repository has an alpine linux docker image that contains the XCP-ng [guest tools](https://xcp-ng.org/docs/guests.html#alpine), configured for use within RancherOS. It was created to speed up the configuration process of a virtualized RancherOS VM within XCP-ng.
 
-# Installation (From [Docker Hub](https://hub.docker.com/repository/docker/geomsk/ros-xe-guest-utilities))
+# Installation (From [Docker Hub](https://hub.docker.com/r/geomsk/ros-xe-guest-utilities))
 Add the following to your `cloud-config.yml` when [installing](https://rancher.com/docs/os/v1.x/en/installation/server/install-to-disk/) RancherOS for the first time. Example command: `sudo ros install -c cloud-config.yml -d /dev/sdX`
 
 If you have an existing installation you can edit the `/var/lib/rancher/conf/cloud-config.d/user_config.yml` file and reboot.
